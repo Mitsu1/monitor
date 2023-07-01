@@ -1,3 +1,6 @@
+//Boostrap customization
+//@import "~bootstrap/scss/bootstrap";
+
 // These are here just for codepen compatibility
 $primary: hsl(171, 100%, 41%);
 $link: hsl(229, 53%, 53%);
@@ -11,6 +14,7 @@ $black: hsl(0, 0%, 4%);
 $dark: hsl(0, 0%, 21%);
 $light: hsl(0, 0%, 96%);
 $text: $dark;
+
 $button-static-color: #7a7a7a !default;
 $button-static-background-color: #f5f5f5 !default;
 $button-static-border-color: #dbdbdb !default;
@@ -58,6 +62,9 @@ label.is-checkbox {
   display: inline-flex;
   justify-content: center;
   &.is-primary {
+    background: $primary;
+  }
+  &.bg-secondary {
     background: $primary;
   }
   padding: $button-padding-vertical $button-padding-horizontal;
@@ -154,3 +161,4 @@ label.is-checkbox {
       vertical-align: top;
   }
 }
+

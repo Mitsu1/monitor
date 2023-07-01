@@ -1,13 +1,13 @@
 import './App.scss';
-import Monitor from './ejemplo/monitor';
+import Router from './routes';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Ejercicio</p>
+        <p>SLAs</p>
       </header>
-      <Monitor/>
+      <Router />
     </div>
   );
 }

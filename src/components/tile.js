@@ -1,22 +1,24 @@
 
-const Tile = ({left,rigth}) => {
+const Tile = ({left,rigth,leftSize,rigthSize}) => {
 
+   let verticalLeft = leftSize || 3
+   let verticalRigth = rigthSize || 4  
    return (
       <>
          <div className="tile is-ancestor">
-            <div className="tile is-vertical is-5">
+            <div className={`tile is-vertical is-${verticalLeft}`}>
                <div className="tile">
                   <div className="tile-a is-parent is-vertical">
-                     <article className="tile is-child notification is-white">
+                     <article className="tile is-child notification ">
                         {left}
                      </article>
                   </div>
                </div>
             </div>
-            <div className="tile is-vertical is-7">
+            <div className={`tile is-vertical is-${verticalRigth}`}>
                <div className="tile">
                   <div className="tile is-child is-vertical">
-                     <article className="tile is-child notification is-white">
+                     <article className="tile is-child notification ">
                         {rigth}
                      </article>
                   </div>

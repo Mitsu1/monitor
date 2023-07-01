@@ -1,0 +1,91 @@
+$primary: hsl(229, 53%, 53%);
+
+.progress {
+  .progress-bar.is-initial {
+    background-color: hsl(229, 53%, 53%);
+  }
+  .progress-bar.is-warning {
+    background-color: hsl(34, 100%, 67%);
+  }
+  .progress-bar.is-success {
+    background-color: hsl(141, 71%, 48%);
+  }
+  .progress-bar.is-danger {
+    background-color: hsl(348, 100%, 61%);
+  }
+  .progress-bar.is-ligth-initial {
+    background-color: hsl(229, 56%, 68%);
+  }
+  .progress-bar.is-ligth-warning {
+    background-color: hsl(34, 85%, 79%);
+  }
+  .progress-bar.is-ligth-success {
+    background-color: rgb(181, 247, 205);
+  }
+  .progress-bar.is-ligth-danger {
+    background-color: rgb(248, 187, 200);
+  }
+}
+
+.progress {
+  overflow: visible;
+  margin-bottom: 26px;
+  height: 4px;
+  
+  .progress-bar {
+    background-color: $primary;
+    position: relative;
+    border-radius: 0px;
+
+    span.bottom {
+      background-color: $primary;
+      position: absolute;
+      bottom: -20px;
+      font-size: 11px;
+      line-height: 10px;
+      padding: 2px 3px 4px 4px;
+      right: -2.3em;
+      border-radius: 2px;
+
+      &:after {
+        bottom: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: $primary;
+        border-width: 5px;
+        margin-left: -5px;
+      }
+    }
+    span.top {
+      background-color: $primary;
+      position: absolute;
+      top: -26px;
+      font-size: 11px;
+      line-height: 10px;
+      padding: 2px 3px 4px 4px;
+      right: -2.3em;
+      border-radius: 2px;
+
+      &:after {
+        top: 70%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: $primary;
+        border-width: 5px;
+        margin-left: -5px;
+      }
+    }
+  }
+}

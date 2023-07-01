@@ -1,11 +1,14 @@
-@import './styles/estilos';
+@import "./styles/estilos";
+@import "./styles/progress_bar";
+
+$white: hsl(0, 0%, 100%);
 .App {
   text-align: center;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 6.5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +17,43 @@
   color: white;
 }
 
+.modal-card-head {
+  p.modal-card-title {
+    margin-bottom: 0;
+  }
+}
+
 .tile-a {
   display: flex;
-  align-items: center!important;
+  align-items: center !important;
 }
+.section {
+  padding: 1rem;
+}
+
+.card-header-title {
+  padding: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-size: 17px;
+}
+
+.card {
+  font-size: 15px;
+  padding: 0px;
+}
+
+.card-footer {
+  padding: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.table-container {
+  table {
+    tr {
+      th.left {
+        text-align-last: left;
+      }
+    }
+  }
+}
+$progress-bar-bg: $white;

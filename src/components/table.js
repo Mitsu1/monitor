@@ -39,3 +39,13 @@ const Table = ({ elements }) => {
    );
 }
 export default Table;
+
+// const elementos = {
+//    columna1: [1, 1, 1],
+//    columna2: ['08:00:00', '15:00:00', '17:00:00'],
+//    columna3: [350, 150, 320],
+//    columna4: [210, 100, 200],
+//    columna5: [140, 50, 120],
+//    columna6: ['si', 'si', 'si'],
+//    columna7: ['35%', '55%', '80%']
+// }
